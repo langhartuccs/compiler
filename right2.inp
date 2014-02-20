@@ -1,3 +1,7 @@
 int a, b, __this_is_4_test[234][10];
 ;
 {}{{;}}
+if(some_expr == (5>=3)){
+    while(a < 54.8 && j > 8 || (x > 0))
+        lkj = 234 + jlksdjf[324];
+}

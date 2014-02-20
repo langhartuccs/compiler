@@ -74,6 +74,7 @@ val_expr : LPAREN val_expr RPAREN
     | const
 
 condblock : IF LPAREN cond RPAREN expr
+    | ELSE expr
 
 whileblock : WHILE LPAREN cond RPAREN expr
 
@@ -87,6 +88,8 @@ cond : NOT cond
     | val_expr GE val_expr
     | val_expr EQ val_expr
     | val_expr NE val_expr
+    | var
+    | ID
 
 type : INT
     | FLOAT
