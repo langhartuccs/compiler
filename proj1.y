@@ -46,6 +46,7 @@ Project 1
 expr : expr expr
     | stmt
     | block_type
+    | SEMICOLON
     | epsilon
 
 stmt : decl SEMICOLON
@@ -53,9 +54,10 @@ stmt : decl SEMICOLON
 
 block_type : condblock
     | whileblock
+    | block
 
 block : LBRACE expr RBRACE
-    | expr
+
 
 decl : type vars
 
@@ -71,9 +73,9 @@ val_expr : LPAREN val_expr RPAREN
     | var
     | const
 
-condblock : IF LPAREN cond RPAREN block
+condblock : IF LPAREN cond RPAREN expr
 
-whileblock : WHILE LPAREN cond RPAREN block
+whileblock : WHILE LPAREN cond RPAREN expr
 
 cond : NOT cond
     | LPAREN cond RPAREN

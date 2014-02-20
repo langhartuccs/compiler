@@ -1,2 +1,4 @@
 this_should_fail
 14_id_starting_with_number;
+int invalid[3;];
+float invalid[3.5];
