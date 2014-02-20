@@ -4,3 +4,5 @@ int invalid[3;];
 float invalid[3.5];
 if(if(true))
 }{
+*/ /*
+/* *** */*/*/

@@ -10,8 +10,10 @@ if(some_expr == (5>=3)){
             blah;
         else{
             while(false){
-                var[4][3][2] = var[3][4];
+                var[4][3][2] = var[3][4];   //This is a comment. 3=5
             }
         }
     }
 }
+/* this is a *** /// *** ()()()(*&*^%#^%$[][]35)
+block comment */

@@ -47,6 +47,7 @@ expr : expr expr
     | stmt
     | block_type
     | SEMICOLON
+    | COMMENT
     | epsilon
 
 stmt : decl SEMICOLON

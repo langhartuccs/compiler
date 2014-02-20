@@ -13,7 +13,8 @@ Project 1
 %}
 
 %%
-"//".*$                 { return COMMENT; }
+"/*"([^*]|"*"[^/])*"*/"              { return COMMENT; }
+"//".*$     { return COMMENT; }
 ";"                     { return SEMICOLON; }
 "("                     { return LPAREN; }
 ")"                     { return RPAREN; }
